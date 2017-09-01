@@ -1,0 +1,192 @@
+// general
+
+.main-container {
+  padding: 0px;
+
+  .region-content {
+    padding: 0;
+    margin: 0;
+  }
+}
+header.navbar-default {
+  margin-bottom: 0;
+}
+
+// normal sections
+
+#block-views-block-offers-slider-block-1, #block-views-block-testimonials-block-1 {
+  text-align: center;
+  // padding: 5em;
+  font-size: 20px;
+  // background-color: $white_blue;
+  color: #080a12;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 4px 6px 15px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 4px 6px 15px;
+  box-shadow: rgba(0, 0, 0, 0.8) 4px 6px 15px;
+}
+
+#block-views-block-offers-slider-block-1 {
+  .field--name-body {
+    font-size: 16px;
+
+    // p:first-child {
+    //   font-size: 18px;
+    //   font-weight: bold;
+    //   margin: 35px 0;
+    // }
+    // ul {
+    //   margin-bottom: 35px; 
+    //   li {
+    //     position: relative;
+    //     padding: 20px 0;
+
+    //     a {
+    //       text-decoration: none;
+    //       color: inherit;
+    //       font-style: italic;
+    //       margin-left: 10px;
+
+    //       &:hover {
+    //         font-weight: bold;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // p span {
+    //   display: block;
+    //   font-weight: bold;
+    // }
+  }
+}
+
+#block-views-block-testimonials-block-1 {
+  font-size: 16px;
+  // padding: 7em 6em 6em 6em;
+  // .front-box {
+  //   float: left;
+  //   width: 27%;
+  //   margin-left: 9%;
+
+  //   &:first-child {
+  //     margin-left: 0;
+  //   }
+
+  //   &:last-child {
+  //     p:last-child {
+  //       margin-bottom: 0.4px;
+  //     }
+  //   }
+
+  //   .box-main {
+  //     padding: 0 30px 30px;
+  //     // background-color: $footer_above_color;
+  //     // color: $white-blue;
+  //     text-align: left;
+  //     line-height: 30px;
+  //     -webkit-border-radius: 4px;
+  //     -moz-border-radius: 4px;
+  //     border-radius: 4px;
+  //     -webkit-box-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+  //     -moz-box-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+  //     box-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+  //     max-height: 469.2px;
+
+  //     .process-icon {
+  //       text-align: center;
+
+  //       > div {
+  //         font-size: 24px;
+  //         // background-color: $gold;
+  //         display: inline-block;
+  //         border-radius: 50px;
+  //         padding: 19.5px 22px;
+  //         top: -34px;
+  //         position: relative;
+  //       }
+  //     }
+
+  //     h4 {
+  //       text-align: center;
+  //       font-size: 22px;
+  //       margin-bottom: 30px;
+  //       margin-top: -10px;
+  //     }
+
+  //     p {
+  //       margin-bottom: 30px;
+  //     }
+  //   }
+  // }
+}
+
+// parallax sections
+
+.parallax {
+  text-align: center;
+  // so we can absolute position the background
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+#block-views-block-frontpage-slider-block-1 {
+  text-align: center;
+  // so we can absolute position the background
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+
+  .form-group, .view-frontpage-slider, .skin-default, .view-content,
+  #views_slideshow_cycle_teaser_section_frontpage_slider-block_1, #views_slideshow_cycle_div_frontpage_slider-block_1_0 {
+    height: 100%;
+  }
+
+  .views_slideshow_cycle_slide {
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      min-width: 100%;
+    }
+  }
+}
+
+.parallax__bg {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background-size: cover !important;
+  // background-repeat: no-repeat !important;
+}
+
+.parallax--dynatastoicheiaparallax .parallax__bg {
+  background: url('../images/points.jpg');
+}
+.parallax--contactfrontpageblock .parallax__bg  {
+  background: url('../images/contact.jpg');
+}
+
+.parallax__content {
+  // center content vertically
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+  background-color: rgba(0,0,0,0.7);
+  padding: 30px;
+  h2 {
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  p {
+    font-size: 20px;
+  }
+}

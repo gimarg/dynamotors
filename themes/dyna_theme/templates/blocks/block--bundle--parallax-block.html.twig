@@ -1,0 +1,7 @@
+<div class="parallax parallax--{{ elements['#id'] }}">
+  <div class="parallax__bg"></div>
+  <div class="parallax__content">
+      {#<h2{{ title_attributes }}>{{ label }}</h2>  {{ content['field_parallax_background_image']['0'] | raw}} #}
+      {{ content['body']['0']['#text'] | raw}}
+  </div>
+</div>

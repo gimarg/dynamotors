@@ -1,0 +1,25 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'dyna_theme'
+description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
+
+regions:
+  admin_bar: 'Admin Tools Bar'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  highlighted: 'Highlighted'
+  sidebar_left: 'Left Sidebar'
+  content: 'Content'
+  sidebar_right: 'Right Sidebar'
+  pre_footer: 'Footer Above'
+  footer_col1: 'Footer 1'
+  footer_col2: 'Footer 2'
+  footer_col3: 'Footer 3'
+
+libraries:
+  - 'dyna_theme/global-styling'
+  - 'dyna_theme/bootstrap-scripts'
+  - 'dyna_theme/font-awesome'
