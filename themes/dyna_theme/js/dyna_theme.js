@@ -55,6 +55,14 @@
           $('.non-scrolled-contact').css('opacity','1');
         }
       });
+
+      /*** Newsletter style changes ***/
+      $("#edit-mergevars-email").attr("placeholder", "Email");
+      $('#edit-submit').html("✓");
+
+      /*** Frontpage Slider button changes ***/
+      $("#views_slideshow_controls_text_previous_frontpage_slider-block_1").html(' ');
+      $("#views_slideshow_controls_text_next_frontpage_slider-block_1").html(' ');
     }
   };
 })(jQuery, Drupal, drupalSettings);

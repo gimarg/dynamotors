@@ -32,7 +32,7 @@ ol, ul {
 
 // Footer.
 .footer {
-  margin-top: 45px;
+  // margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
@@ -85,7 +85,18 @@ body {
 .feed-icons {
   display: none;
 }
-  
+
+.container-fluid {
+  padding: 0;
+}
+html,body
+{
+    width: 100%;
+    // height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 //------ HEADER  ------//
 header.navbar-default {
   // background-color: $main-color;
@@ -109,7 +120,7 @@ header.navbar-default {
     margin: 0;
     // padding: 0;
     padding: 20px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     // border-radius: 4px;
     // margin-left: 20px;
     transition: all 0.2s ease;
@@ -163,6 +174,10 @@ header.navbar-default {
       visibility: hidden;
       float: left;
     }
+    .non-scrolled-contact {
+      position: relative;
+      top: -50px;
+    }
   }
 
   #navbar-collapse {
@@ -183,8 +198,8 @@ header.navbar-default {
 
           a {
             color: white;
-            // padding: 15px 45px;
-            background-color: rgba(0,0,0,0.5);
+            padding: 15px 44px;
+            background-color: rgba(0,0,0,0.6);
             letter-spacing: 0.8px;
             font-size: 14px;
             text-transform: uppercase;
@@ -198,7 +213,8 @@ header.navbar-default {
           > ul {
             background-color: $main-color;
             > li > a {
-              padding: 8px 20px;
+              padding-top: 8px;
+              padding-bottom: 8px;
               text-transform: capitalize;
               width: 98%;
               margin: auto;
@@ -250,4 +266,218 @@ header.navbar-default {
 .search-block-form {
   float: right;
   width: 250px;
+}
+
+//------ FOOTER  ------//
+
+footer {
+  background-color: $gray;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+
+  h2 {
+    font-size: 18px;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: $main-color;
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+
+  #block-footersitebrandinginfo {
+    text-align: center;
+    .footer-logo {
+      margin-bottom: 15px;
+    }
+
+    .contact-details {
+      div {
+        display: block;
+        padding: 10px 0;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .addthis_inline_follow_toolbox_d4mw {
+      display: inline-block;
+      display: -webkit-inline-box;
+    }
+  }
+
+  #block-footerkatastemata {
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin-bottom: 16px;
+      margin-top: 0;  
+    }
+
+    p {
+      margin: 0 0 20px 0;
+    }
+
+    a {
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      &.address {
+        font-weight: bold;
+
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f041";
+          margin-right: 5px;
+        }
+      }
+
+      &.phone {
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f095";
+          margin-right: 5px;
+        }
+      }
+
+      &.email {
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f0e0";
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  #block-kentrikeploegese {
+    margin-top: 0;
+    h2 {
+      margin-top: 0;
+    }
+    // margin-bottom: 10px;
+    ul {
+      li {
+        display: block;
+        width: 100%;
+        a {
+          padding: 5px;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  #block-prosphores {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    h2 {
+      padding: 8px;
+    }
+    a {
+      color: $main-color;
+      font-weight: bold;
+      padding: 8px;
+
+      &:hover, &:focus, &:active {
+        background-color: $main-color !important;
+        color: white !important;
+        font-weight: normal;
+      }
+    }
+  }
+
+  #block-dyna-theme-footer {
+    font-weight: normal;
+    margin-top: 25px;
+    li {
+      display: inline-block;
+      width: 50%;
+      a {
+        padding: 5px;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+#block-mailchimpsubscriptionformnewsletter {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  label.control-label {
+    display: none;
+  }
+  #mailchimp-newsletter-a893a76dc9-mergefields {
+    float: left;
+    #edit-mergevars-email {
+      border-radius: 0;
+      border: none;
+    }
+  }
+  #edit-actions {
+    float: left;
+    button {
+      font-weight: bold;
+      font-size: 22px;
+      padding: 0.4px 9px;
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(to bottom, #db0000 0%, #b10000 36%, #720000 100%);
+      color: white;
+      // border: none;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+}
+
+#block-orarioleitoyrgias {
+  p {
+    margin-bottom: 3px;
+    span {
+      color: $main-color;
+      font-size: 16px;
+    }
+  }
+}
+
+//------ AFTER-FOOTER  ------//
+.after-footer {
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  padding: 10px;
+  color: white;
+
+  a {
+    color: $main-color;
+    font-weight: bold;
+
+    &:hover, &:focus, &:active {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 3px;
+    }
+  }
 }

@@ -141,7 +141,7 @@ header.navbar-default {
   height: 500px;
 
   .form-group, .view-frontpage-slider, .skin-default, .view-content,
-  #views_slideshow_cycle_teaser_section_frontpage_slider-block_1, #views_slideshow_cycle_div_frontpage_slider-block_1_0 {
+  #views_slideshow_cycle_teaser_section_frontpage_slider-block_1, #views_slideshow_cycle_div_frontpage_slider-block_1_0, #views_slideshow_cycle_main_frontpage_slider-block_1 {
     height: 100%;
   }
 
@@ -166,9 +166,11 @@ header.navbar-default {
 
 .parallax--dynatastoicheiaparallax .parallax__bg {
   background: url('../images/points.jpg');
+  background-position: 0 -230px;
 }
 .parallax--contactfrontpageblock .parallax__bg  {
   background: url('../images/contact.jpg');
+  background-position: 0 -230px;
 }
 
 .parallax__content {

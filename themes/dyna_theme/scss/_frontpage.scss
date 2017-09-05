@@ -8,19 +8,77 @@
     .views-field-body {
       display: none;
     }
+    .views-slideshow-controls-bottom {
+      position: relative;
+      z-index: 5;
+      .views_slideshow_controls_text {
+        font-size: 20px;
+        padding: 10px 20px 10px 18px;
+        background-color: transparent;
+        color: rgba(0,0,0,0.8);
+        border-radius: 0;
+        position: relative;
+        bottom: 260px;
+        font-size: 26px;
+
+        #views_slideshow_controls_text_pause_frontpage_slider-block_1 {
+          display: none;
+        }
+        #views_slideshow_controls_text_previous_frontpage_slider-block_1 {
+          float: left;
+          padding: 10px 20px 10px 18px;
+          background-color: black;
+          opacity: 0.3;
+          color: white;
+
+          &:before {
+            content: "\f054";
+            display: inline-block;
+            transform: rotate(180deg);
+            font-family: FontAwesome;
+          }
+          &:hover, &:active, &:focus {
+            background-color: black;
+            opacity: 0.7;
+            color: white;
+            cursor: pointer;
+          }
+        }
+        #views_slideshow_controls_text_next_frontpage_slider-block_1 {
+          float: right;
+          padding: 10px 18px 10px 20px;
+          background-color: black;
+          opacity: 0.3;
+          color: white;
+
+          &:before {
+            content: "\f054";
+            display: inline-block; 
+            font-family: FontAwesome;
+          }
+          &:hover, &:active, &:focus {
+            background-color: black;
+            opacity: 0.7;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 
   #block-views-block-offers-slider-block-1 {
     .view-header {
       font-size: 22px;
-      font-weight: bold;
+      // font-weight: bold;
       text-align: center;
       display: inline-block;
       width: 100%;
       padding: 10px;
       // background-color: rgba(134, 151, 145, 0.4);
-      background-color: rgba(146, 146, 146, 0.4);
-      color: $main-color;
+      // background-color: rgba(146, 146, 146, 0.4);
+      background-color: $main-color;
+      color: white;
     }
     .owl-wrapper-outer {
       margin: 10px;
@@ -107,6 +165,9 @@
           background-color: rgba(255, 255, 255, 0.6);
           h2 {
             display: none;
+          }
+          p {
+            padding: 10px;
           }
           .field--name-field-pelates {
             // display: inline;
