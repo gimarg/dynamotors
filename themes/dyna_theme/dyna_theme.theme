@@ -10,13 +10,41 @@
 use Drupal\Core\Form\FormStateInterface;
 
 /**
+ * Changes default flood limit for messages sent
+ **/
+$flood_limit = 10; //Default value is 5, change to whatever suits you. 
+\Drupal::configFactory()->getEditable('contact.settings')
+      ->set('flood.limit', $flood_limit)
+      ->save();
+/**
  * Implements hook_theme_suggestions_HOOK_alter() for form templates.
  * @param array $suggestions
  * @param array $variables
- */
+ **/
 function dyna_theme_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   // Block suggestions for custom block bundles.
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']	['#block_content']->bundle());
   }
+}
+
+/**
+ * Implements hook_theme__form_alter
+ * - Adds classes to form element
+ * - Makes author field required
+ **/
+function dyna_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if($form_id == "contact_message_feedback_form"){
+      // kint($form);
+      $form['#prefix'] = '<div class="full-contact-form col-sm-8">';
+      $form['#suffix'] = '</div>';
+      // $form['author']['name']['#required'] = TRUE;
+      // kint($form);
+      $form['mail']['#required'] = FALSE;
+  }
+
+  if ($form_id == 'comment_comment_form') {
+    $form['author']['name']['#required'] = TRUE;
+  }
+//  return $form;
 }

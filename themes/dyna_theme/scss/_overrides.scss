@@ -220,6 +220,10 @@ header.navbar-default {
               margin: auto;
             }
           } 
+          &.active a {
+            background-color: $main-color !important;
+            color: white !important;
+          }
         }
       }
     }
@@ -328,6 +332,7 @@ footer {
 
     a {
       display: block;
+      line-height: 24px;
 
       &:hover {
         text-decoration: none;
@@ -435,7 +440,7 @@ footer {
       border: none;
     }
   }
-  #edit-actions {
+  .form-actions {
     float: left;
     button {
       font-weight: bold;
@@ -470,14 +475,15 @@ footer {
   color: white;
 
   a {
-    color: $main-color;
-    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+    background-color: rgba(177, 0, 0, 0.5);
+    padding: 1px 5px;
 
     &:hover, &:focus, &:active {
-      color: white;
+      color: $main-color;
       text-decoration: none;
-      font-size: 16px;
-      padding: 3px;
+      background-color: transparent;
     }
   }
 }

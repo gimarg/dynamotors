@@ -6474,6 +6474,9 @@ header.navbar-default {
           text-transform: capitalize;
           width: 98%;
           margin: auto; }
+      header.navbar-default #navbar-collapse #block-dyna-theme-main-menu ul.menu.navbar-nav li.active a {
+        background-color: #B10000 !important;
+        color: white !important; }
   header.navbar-default.scrolled #navbar-collapse {
     height: 50px !important;
     background-color: rgba(0, 0, 0, 0.9); }
@@ -6534,7 +6537,8 @@ footer {
     footer #block-footerkatastemata p {
       margin: 0 0 20px 0; }
     footer #block-footerkatastemata a {
-      display: block; }
+      display: block;
+      line-height: 24px; }
       footer #block-footerkatastemata a:hover {
         text-decoration: none;
         color: #B10000;
@@ -6601,9 +6605,9 @@ footer {
     #block-mailchimpsubscriptionformnewsletter #mailchimp-newsletter-a893a76dc9-mergefields #edit-mergevars-email {
       border-radius: 0;
       border: none; }
-  #block-mailchimpsubscriptionformnewsletter #edit-actions {
+  #block-mailchimpsubscriptionformnewsletter .form-actions {
     float: left; }
-    #block-mailchimpsubscriptionformnewsletter #edit-actions button {
+    #block-mailchimpsubscriptionformnewsletter .form-actions button {
       font-weight: bold;
       font-size: 22px;
       padding: 0.4px 9px;
@@ -6626,13 +6630,14 @@ footer {
   padding: 10px;
   color: white; }
   .after-footer a {
-    color: #B10000;
-    font-weight: bold; }
+    color: white;
+    letter-spacing: 1.5px;
+    background-color: rgba(177, 0, 0, 0.5);
+    padding: 1px 5px; }
     .after-footer a:hover, .after-footer a:focus, .after-footer a:active {
-      color: white;
+      color: #B10000;
       text-decoration: none;
-      font-size: 16px;
-      padding: 3px; }
+      background-color: transparent; }
 
 .path-frontpage #block-views-block-frontpage-slider-block-1 img {
   max-width: none;
@@ -6912,3 +6917,189 @@ header.navbar-default {
     margin-bottom: 35px; }
   .parallax__content p {
     font-size: 20px; }
+
+.path-scholia-pelaton .view-testimonials .views-view-grid .views-row .views-col {
+  padding: 50px 100px;
+  font-size: 14px;
+  text-align: center;
+  background-image: url("../images/quotation.png");
+  background-repeat: no-repeat;
+  background-position: 50% 37%;
+  background-size: 15%; }
+  .path-scholia-pelaton .view-testimonials .views-view-grid .views-row .views-col article {
+    background-color: rgba(255, 255, 255, 0.6); }
+    .path-scholia-pelaton .view-testimonials .views-view-grid .views-row .views-col article h2 {
+      display: none; }
+    .path-scholia-pelaton .view-testimonials .views-view-grid .views-row .views-col article p {
+      padding: 10px;
+      line-height: 27px;
+      letter-spacing: 0.3px; }
+    .path-scholia-pelaton .view-testimonials .views-view-grid .views-row .views-col article .field--name-field-pelates {
+      font-style: italic;
+      color: #B10000;
+      margin-top: 5px;
+      line-height: 27px;
+      letter-spacing: 1px; }
+    .path-scholia-pelaton .view-testimonials .views-view-grid .views-row .views-col article .field--name-field-emeromenia {
+      display: inline;
+      font-style: italic;
+      color: #B10000;
+      line-height: 27px;
+      letter-spacing: 0.3px; }
+
+.path-scholia-pelaton .view-testimonials .pager-nav li a {
+  background-color: transparent;
+  border: none;
+  color: #B10000;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.4px; }
+
+.path-contact .region-highlighted #block-contactpagemap {
+  display: block; }
+  .path-contact .region-highlighted #block-contactpagemap #map {
+    display: inline-block;
+    height: 450px;
+    width: 100%;
+    margin: 50px 0 0 0;
+    border-color: rgba(145, 158, 209, 0.6);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px; }
+
+.path-contact .main-content {
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .path-contact .main-content .full-contact-form {
+    text-align: center; }
+    .path-contact .main-content .full-contact-form form {
+      display: inline-block;
+      text-align: left;
+      color: black;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-color: rgba(145, 158, 209, 0.6);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+      box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+      margin-top: 20px;
+      padding: 30px;
+      overflow: hidden; }
+      .path-contact .main-content .full-contact-form form .table-responsive {
+        border: none; }
+      .path-contact .main-content .full-contact-form form label, .path-contact .main-content .full-contact-form form .field-label {
+        margin-top: 5px;
+        letter-spacing: 1px;
+        font-weight: normal; }
+      .path-contact .main-content .full-contact-form form input, .path-contact .main-content .full-contact-form form textarea {
+        margin: 5px;
+        margin-left: 0; }
+        .path-contact .main-content .full-contact-form form input:focus, .path-contact .main-content .full-contact-form form textarea:focus {
+          outline: none;
+          border: none;
+          box-shadow: 0 0 6px 1px black; }
+      .path-contact .main-content .full-contact-form form .form-group {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 5px; }
+      .path-contact .main-content .full-contact-form form .form-control {
+        display: inline-block;
+        width: 66%;
+        float: right; }
+      .path-contact .main-content .full-contact-form form button.tabledrag-toggle-weight, .path-contact .main-content .full-contact-form form .field-multiple-drag {
+        display: none; }
+      .path-contact .main-content .full-contact-form form #field-your-values {
+        margin-bottom: 0px; }
+        .path-contact .main-content .full-contact-form form #field-your-values.table-hover > tbody > tr:hover, .path-contact .main-content .full-contact-form form #field-your-values.table-striped > tbody > tr:nth-of-type(odd) {
+          background: transparent; }
+        .path-contact .main-content .full-contact-form form #field-your-values .form-group {
+          margin-bottom: 0; }
+        .path-contact .main-content .full-contact-form form #field-your-values .form-control {
+          width: 98%;
+          display: block;
+          float: right; }
+        .path-contact .main-content .full-contact-form form #field-your-values th {
+          border: none;
+          padding: 3px 0; }
+        .path-contact .main-content .full-contact-form form #field-your-values tr > td {
+          border: none;
+          padding: 0; }
+        .path-contact .main-content .full-contact-form form #field-your-values thead {
+          display: inline-block;
+          margin-top: 5px; }
+        .path-contact .main-content .full-contact-form form #field-your-values tbody {
+          display: inline-table;
+          width: 67.5%;
+          float: right; }
+      .path-contact .main-content .full-contact-form form #edit-field-your-message-wrapper .form-item-field-your-message-0-value {
+        overflow: hidden; }
+        .path-contact .main-content .full-contact-form form #edit-field-your-message-wrapper .form-item-field-your-message-0-value .form-textarea-wrapper {
+          overflow: hidden;
+          display: inline; }
+      .path-contact .main-content .full-contact-form form #edit-actions {
+        float: right;
+        margin-top: 10px;
+        padding: 15px; }
+        .path-contact .main-content .full-contact-form form #edit-actions #edit-submit {
+          font-size: 16px;
+          padding: 4px 9px;
+          display: inline-block;
+          text-decoration: none;
+          background: linear-gradient(to bottom, #db0000 0%, #b10000 36%, #720000 100%);
+          color: white;
+          border-radius: 0;
+          margin: 0;
+          border: 0;
+          -webkit-box-shadow: rgba(255, 255, 255, 0.5) 2px 2px 5px;
+          -moz-box-shadow: rgba(255, 255, 255, 0.5) 2px 2px 5px;
+          box-shadow: rgba(255, 255, 255, 0.5) 2px 2px 5px; }
+          .path-contact .main-content .full-contact-form form #edit-actions #edit-submit span {
+            display: none; }
+          .path-contact .main-content .full-contact-form form #edit-actions #edit-submit:focus {
+            outline: 1px dotted rgba(255, 255, 255, 0.7); }
+          .path-contact .main-content .full-contact-form form #edit-actions #edit-submit:active {
+            box-shadow: 0 0 6px 1px black; }
+        .path-contact .main-content .full-contact-form form #edit-actions #edit-preview {
+          padding: 2px 10px;
+          margin: 8px 12px 0 0;
+          display: none; }
+  .path-contact .main-content #block-contactdetails .field--name-body {
+    display: inline-block;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-color: rgba(145, 158, 209, 0.6);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.7) 3px 3px 10px;
+    margin-top: 20px;
+    padding: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); }
+    .path-contact .main-content #block-contactdetails .field--name-body div {
+      letter-spacing: 1px;
+      padding: 5px 0px; }
+      .path-contact .main-content #block-contactdetails .field--name-body div a {
+        color: #B10000;
+        font-weight: bold;
+        text-shadow: none;
+        margin-left: 5px; }
+      .path-contact .main-content #block-contactdetails .field--name-body div.katastima {
+        padding-left: 5px; }
+        .path-contact .main-content #block-contactdetails .field--name-body div.katastima a {
+          text-decoration: none !important; }
+          .path-contact .main-content #block-contactdetails .field--name-body div.katastima a:after {
+            font-family: 'FontAwesome';
+            content: '\f05a'; }
+    .path-contact .main-content #block-contactdetails .field--name-body p {
+      margin-top: 20px;
+      margin-bottom: 5px; }
