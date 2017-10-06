@@ -1,14 +1,16 @@
 global-styling:
   css:
     theme:
+      css/jquery-ui.css: {}
       css/style.css: {}
       //fonts.googleapis.com/css?family=Noto+Sans: { type: external }
   js:
     js/ScrollMagic.min.js: {}
     js/animation.gsap.min.js: {}
     js/TweenMax.min.js: {}
+    js/jquery-ui.min.js: {}
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyAxRbQ4BwOA-44yBp7Z3XH551I-Kp9o7tQ: {type: external, attributes: {defer: true, async: true}}
     js/dyna_theme.js: {}
-    https://maps.googleapis.com/maps/api/js?key=AIzaSyAxRbQ4BwOA-44yBp7Z3XH551I-Kp9o7tQ&callback=initMap: {type: external, attributes: { defer: true, async: true } }
   dependencies:
     - core/jquery
     - core/drupal
